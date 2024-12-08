@@ -1,0 +1,37 @@
+/*Basic style*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background: $background-color;
+}
+
+.container {
+@include min-max(320px, 100%);
+}
+
+.wrap {
+@include min-max(320px, 1105px);
+}
+
+p,
+a,
+button {
+    color: $text-color;
+}
+
+img {
+display: block;
+max-width: 100%;
+height: auto;
+}
+
+html,
+body {
+overflow-x: hidden;
+}
+

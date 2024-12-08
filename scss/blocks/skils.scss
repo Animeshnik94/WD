@@ -1,0 +1,42 @@
+.my_skils-container{
+    display: flex;
+    margin: 101px auto;
+    width: 1150px;
+    justify-content: space-between;
+    align-items: center;
+
+    .my_skils-scales_list{
+        
+        h1{
+            font-size: 32px;
+            line-height: 37.5px;
+            font-weight: 500;
+            margin-bottom: 50px;
+        }
+
+        .my_skils-scale-name{
+            margin-bottom: 15px;
+        }
+
+        .my_skils-scale_bar{
+            background-color: #C4C4C4; /* Цвет фона шкалы */
+            overflow: hidden; /* Скрытие излишков */
+            height: 4px; /* Высота прогресс-бара */
+            width: 445px;
+            margin-bottom: 30px;
+            
+            
+
+            .skill-fill{
+                background-color: $blue; /* Цвет заполненной части прогресс-бара */
+                height: 100%; /* Высота заполненной части равна высоте родительского контейнера */
+                transition: width 0.5s; /* Плавный переход при изменении ширины */
+
+            }
+        }
+    }
+
+    .avatar-container{
+        width: 555px;
+    }
+}

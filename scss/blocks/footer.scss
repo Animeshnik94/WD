@@ -1,0 +1,30 @@
+.footer{
+    background-color: $blue;
+    padding: 50px;
+
+    .footer-list{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        .footer-logos{
+            display: flex;
+            justify-content: center;
+    
+            img{
+                margin-left: 22px;
+            }
+        }
+        .footer-item{
+            h1{
+                color: $white;
+                font-size: 21px;
+                margin-bottom: 20px;
+            }
+            p{
+                color: $white;
+                font-size: 13px;
+            }
+        }
+    }
+    
+}

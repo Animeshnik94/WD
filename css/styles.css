@@ -1,0 +1,469 @@
+@charset "UTF-8";
+/**
+ * Сброс стилей
+ **/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+input {
+  outline: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+/*Basic style*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #F9F9F9;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.wrap {
+  min-width: 320px;
+  max-width: 1105px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+p,
+a,
+button {
+  color: #727272;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.first-page {
+  background-color: #EEEFF1;
+}
+.first-page header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 57px;
+}
+.first-page header .header__menu-list {
+  display: flex;
+}
+.first-page header .header__menu-list .header__menu-item {
+  margin-left: 42px;
+}
+.first-page header .header__menu-list .header__menu-item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  size: 16px;
+  line-height: 26.25px;
+  font-weight: 400;
+  transition: color 0.3s ease;
+  color: #000000;
+}
+.first-page header .header__menu-list .header__menu-item a:hover {
+  color: #34547A;
+}
+.first-page .information-container {
+  display: flex;
+  margin-top: 162px;
+  padding-bottom: 146px;
+  justify-content: space-around;
+  align-items: center;
+}
+.first-page .information-container .text-container {
+  width: 540px;
+}
+.first-page .information-container .text-container h1 {
+  font-size: 48px;
+  list-style: 78.75px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 60px;
+}
+.first-page .information-container .text-container p {
+  margin-bottom: 60px;
+}
+.first-page .information-container .text-container button {
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  display: inline-block;
+  cursor: pointer;
+  padding: 25px 41px;
+  background-color: #34547A;
+  border: none;
+  text-align: center;
+  transition: background-color 0.6s ease;
+}
+.first-page .information-container .text-container button:hover {
+  background-color: #0c1929;
+}
+
+.about_me-container {
+  margin-top: 119px;
+  margin-bottom: 100px;
+}
+.about_me-container .about_me-information {
+  max-width: 540px;
+  margin: 0 auto;
+  text-align: center;
+}
+.about_me-container .about_me-information h1 {
+  font-size: 32px;
+  line-height: 37.5px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.our_projects-container {
+  background-color: #34547A;
+}
+.our_projects-container .out_projects-list {
+  max-width: 1091px;
+  margin: 0 auto;
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.our_projects-container .out_projects-list .our_projects-item {
+  display: flex;
+  justify-content: space-between;
+  width: 141px;
+}
+.our_projects-container .out_projects-list .our_projects-item .our_projects-text h1 {
+  font-size: 21px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.our_projects-container .out_projects-list .our_projects-item .our_projects-text p {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.my_skils-container {
+  display: flex;
+  margin: 101px auto;
+  width: 1150px;
+  justify-content: space-between;
+  align-items: center;
+}
+.my_skils-container .my_skils-scales_list h1 {
+  font-size: 32px;
+  line-height: 37.5px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+.my_skils-container .my_skils-scales_list .my_skils-scale-name {
+  margin-bottom: 15px;
+}
+.my_skils-container .my_skils-scales_list .my_skils-scale_bar {
+  background-color: #C4C4C4; /* Цвет фона шкалы */
+  overflow: hidden; /* Скрытие излишков */
+  height: 4px; /* Высота прогресс-бара */
+  width: 445px;
+  margin-bottom: 30px;
+}
+.my_skils-container .my_skils-scales_list .my_skils-scale_bar .skill-fill {
+  background-color: #34547A; /* Цвет заполненной части прогресс-бара */
+  height: 100%; /* Высота заполненной части равна высоте родительского контейнера */
+  transition: width 0.5s; /* Плавный переход при изменении ширины */
+}
+.my_skils-container .avatar-container {
+  width: 555px;
+}
+
+.how_i_work {
+  background-color: #EEEFF1;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.how_i_work .how_i_work-text {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 57px;
+  width: 540px;
+}
+.how_i_work .how_i_work-text h1 {
+  margin-bottom: 50px;
+  font-size: 32px;
+  line-height: 37.5px;
+  font-weight: 500;
+}
+.how_i_work .image-container {
+  position: relative;
+  width: 1110px;
+  height: 600px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.how_i_work .image-container .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+.how_i_work .image-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+.how_i_work .image-container .overlay .icon {
+  fill: white;
+  width: 100px;
+  height: 100px;
+}
+.how_i_work .image-container:hover .overlay {
+  opacity: 1;
+}
+.how_i_work .image-container:hover .image {
+  opacity: 0.7;
+}
+
+.gallery-section {
+  background-color: #ffffff;
+}
+
+.gallery {
+  padding-top: 28px;
+  width: 100vw;
+  max-width: none;
+}
+
+.gallery-row {
+  display: flex;
+  margin-bottom: 0;
+}
+
+.gallery-item {
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(52, 84, 122, 0.8);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+  font-size: 24px;
+}
+.overlay i {
+  color: white;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+.microsoft-logos-list {
+  padding: 75px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.microsoft-logos-list .microsoft-logo-item {
+  display: block;
+  width: 255px;
+  height: 120px;
+  margin: 10px;
+}
+.microsoft-logos-list .microsoft-logo-item .microsoft-logo {
+  width: 100%;
+  height: auto;
+}
+
+.form-section .form-text {
+  padding-top: 100px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 57px;
+  width: 540px;
+}
+.form-section .form-text h1 {
+  margin-bottom: 50px;
+  font-size: 32px;
+  line-height: 37.5px;
+  font-weight: 500;
+}
+.form-section .form-container {
+  padding: 20px;
+  width: 540px; /* Ширина контейнера */
+  margin: 0 auto;
+}
+.form-section .form-container .form-group {
+  margin-bottom: 20px;
+  display: flex; /* Выстраиваем элементы в строку */
+  justify-content: space-between; /* Пространство между элементами */
+}
+.form-section .form-container .form-group input,
+.form-section .form-container .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #F9F9F9;
+  font-size: 14px;
+}
+.form-section .form-container .form-group input::placeholder,
+.form-section .form-container .form-group textarea::placeholder { /* Псевдоэлемент для placeholder */
+  color: #5F5D5D; /* Цвет текста подсказки */
+}
+.form-section .form-container .form-group input[type=text],
+.form-section .form-container .form-group input[type=email] {
+  width: calc(50% - 10px); /* 50% ширины за вычетом отступа */
+}
+.form-section .form-container textarea {
+  resize: none;
+  height: 175px; /* Высота текстовой области */
+}
+.form-section .form-container .button-container {
+  display: flex; /* Используем flex для центрирования */
+  justify-content: center; /* Центрируем кнопку по горизонтали */
+  margin-top: 20px; /* Отступ сверху для кнопки */
+}
+.form-section .form-container .button-container button {
+  width: 190px; /* Ширина кнопки */
+  padding: 20px;
+  background-color: #34547A;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+.form-section .form-container .button-container button:hover {
+  background-color: #0c1929;
+}
+
+.form-section {
+  background-color: #EEEFF1;
+  padding: 100px 0;
+}
+.form-section .about_form-information {
+  max-width: 540px;
+  margin: 0 auto;
+  text-align: center;
+}
+.form-section .about_form-information h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  line-height: 37.5px;
+}
+.form-section .about_form-information p {
+  margin-bottom: 65px;
+  line-height: 26.25px;
+}
+
+.footer {
+  background-color: #34547A;
+  padding: 50px;
+}
+.footer .footer-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer-list .footer-logos {
+  display: flex;
+  justify-content: center;
+}
+.footer .footer-list .footer-logos img {
+  margin-left: 22px;
+}
+.footer .footer-list .footer-item h1 {
+  color: #ffffff;
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+.footer .footer-list .footer-item p {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+/*# sourceMappingURL=styles.css.map */

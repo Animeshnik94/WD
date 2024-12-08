@@ -1,0 +1,28 @@
+.our_projects-container{
+    background-color: $blue;
+
+    .out_projects-list{
+        max-width: 1091px;
+        margin: 0 auto;
+        padding: 100px 0;
+        display: flex;
+        justify-content: space-between;
+
+        .our_projects-item{
+            display: flex;
+            justify-content: space-between;
+            width: 141px;
+            .our_projects-text{
+                h1{
+                    font-size: 21px;
+                    color: $white;
+                    margin-bottom: 10px;
+                }
+                p{
+                    color: $white;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
